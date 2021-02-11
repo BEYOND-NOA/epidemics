@@ -1,0 +1,59 @@
+acquisition:
+  groundstation:
+    code: MSI
+creation_dt: '2019-03-10T00:00:00.000000'
+extent:
+  center_dt: '2019-03-10T00:00:00.000000'
+  coord:
+    ll:
+      lat: 38.955442295843056
+      lon: 21.01159449555561
+    lr:
+      lat: 38.955442295843056
+      lon: 24.398243116686206
+    ul:
+      lat: 40.20410054076919
+      lon: 21.01159449555561
+    ur:
+      lat: 40.20410054076919
+      lon: 24.398243116686206
+format:
+  name: GeoTIFF
+grid_spatial:
+  projection:
+    geo_ref_points:
+      ll:
+        x: 21.01159449555561
+        y: 38.955442295843056
+      lr:
+        x: 24.398243116686206
+        y: 38.955442295843056
+      ul:
+        x: 21.01159449555561
+        y: 40.20410054076919
+      ur:
+        x: 24.398243116686206
+        y: 40.20410054076919
+    spatial_reference: GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AXIS["Latitude",NORTH],AXIS["Longitude",EAST],AUTHORITY["EPSG","4326"]]
+id: d4e040f9-06fc-42e2-81ff-2c36d9659de2
+image:
+  bands:
+    NDVI:
+      band: 1
+      path: S2A_MSIL1C_2019-03-10_R093.tif
+    NDWI:
+      band: 2
+      path: S2A_MSIL1C_2019-03-10_R093.tif
+    NDMI:
+      band: 3
+      path: S2A_MSIL1C_2019-03-10_R093.tif
+    NDBI:
+      band: 4
+      path: S2A_MSIL1C_2019-03-10_R093.tif
+instrument:
+  name: MSI
+platform:
+  code: SENTINEL_2
+lineage:
+  source_datasets: {}
+product_type: level1C
