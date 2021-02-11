@@ -1,0 +1,38 @@
+name: ls8_level1_scene
+description: Landsat 8 Level 1 Tier 1
+metadata_type: eo
+
+metadata:
+    platform:
+        code: LANDSAT_8
+    instrument:
+        name: OLI_TIRS
+    product_type: level1
+    format:
+        name: GeoTIFF
+storage:
+    crs: >
+        GEOGCRS["WGS 84",DATUM["World Geodetic System 1984",ELLIPSOID["WGS 84",6378137,298.257223563,LENGTHUNIT["metre",1]]],PRIMEM["Greenwich",0,ANGLEUNIT["degree",0.0174532925199433]],CS[ellipsoidal,2],AXIS["geodetic latitude (Lat)",north,ORDER[1],ANGLEUNIT["degree",0.0174532925199433]],AXIS["geodetic longitude (Lon)",east,ORDER[2],ANGLEUNIT["degree",0.0174532925199433]],ID["EPSG",4326]]
+    resolution:
+        longitude: 0.004491576420598
+        latitude: 0.004491576420598
+measurements:
+    - name: 'NDVI'
+      dtype: float64
+      nodata: .nan
+      units: 'N/A'
+
+    - name: 'NDWI'
+      dtype: float64
+      nodata: .nan
+      units: 'N/A'
+
+    - name: 'NDMI'
+      dtype: float64
+      nodata: .nan
+      units: 'N/A'
+
+    - name: 'NDBI'
+      dtype: float64
+      nodata: .nan
+      units: 'N/A'
