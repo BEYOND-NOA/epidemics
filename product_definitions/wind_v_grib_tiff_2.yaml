@@ -1,0 +1,115 @@
+name: wind_v_comp
+description: ERA5Land reanalysis
+metadata_type: eo
+
+metadata:
+    platform:
+        code: ERA5_Wind_v
+    instrument:
+        name: ERA5
+    product_type: hourly
+    format:
+        name: GeoTIFF
+storage:
+    crs: >
+        GEOGCRS["Coordinate System imported from GRIB file", DATUM["unnamed", ELLIPSOID["Sphere",6371229,0, LENGTHUNIT["metre",1, ID["EPSG",9001]]]], PRIMEM["Greenwich",0, ANGLEUNIT["degree",  0.0174532925199433, ID["EPSG",9122]]], CS[ellipsoidal,2], AXIS["latitude",north, ORDER[1], ANGLEUNIT["degree",0.0174532925199433, ID["EPSG",9122]]], AXIS["longitude",east, ORDER[2], ANGLEUNIT["degree",0.0174532925199433, ID["EPSG",9122]]]]
+    resolution:
+        longitude: 0.100000000000001
+        latitude: 0.100000000000001
+measurements:
+    - name: 'Band_1'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_2'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_3'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_4'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_5'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_6'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_7'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_8'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_9'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_10'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_11'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_12'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_13'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_14'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_15'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_16'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_17'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_18'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_19'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_20'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_21'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_22'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_23'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
+    - name: 'Band_24'
+      dtype: float32
+      units: 'm/s'
+      nodata: 'NaN'
