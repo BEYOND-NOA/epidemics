@@ -1,5 +1,5 @@
 import ee
-
+from . import image
 
 """
 Utilizing the static methods of Google Earth Engine's Python API this module includes functions to handle the process of exporting image collections.
@@ -36,7 +36,7 @@ def _collection_to_local_hard_drive_exporter(collection, path: str = None, exten
         # typecasting is necessary
         imageToExport = ee.Image(listOfImages.get(counter))
 
-        taskID = _export_image_to_local_hard_drive(imageToExport, kwargs, path, extension)
+        taskID = image._export_image_to_local_hard_drive(imageToExport, kwargs, path, extension)
 
         exportTasksIdsList.append(taskID)
     return exportTasksIdsList
@@ -69,7 +69,7 @@ def _collection_to_asset_exporter(collection, bandType: str, kwargs: dict):
         # typecasting is necessary
         imageToExport = ee.Image(listOfImages.get(counter))
 
-        taskID = _image_to_asset_exporter(imageToExport, bandType, bandOrder, kwargs)
+        taskID = image._image_to_asset_exporter(imageToExport, bandType, kwargs)
 
         exportTasksIdsList.append(taskID)
     return exportTasksIdsList
@@ -102,7 +102,7 @@ def _collection_to_drive_exporter(collection, bandType: str, kwargs: dict):
         # typecasting is necessary
         imageToExport = ee.Image(listOfImages.get(counter))
 
-        taskID = _image_to_drive_exporter(imageToExport, bandType, bandOrder, kwargs)
+        taskID = image._image_to_drive_exporter(imageToExport, bandType, kwargs)
 
         exportTasksIdsList.append(taskID)
     return exportTasksIdsList
@@ -135,7 +135,7 @@ def _collection_to_cloud_storage_exporter(collection, bandType: str, kwargs: dic
         # typecasting is necessary
         imageToExport = ee.Image(listOfImages.get(counter))
 
-        taskID = _image_to_cloud_storage_exporter(imageToExport, bandType, bandOrder, kwargs)
+        taskID = image._image_to_cloud_storage_exporter(imageToExport, bandType, kwargs)
 
         exportTasksIdsList.append(taskID)
     return exportTasksIdsList

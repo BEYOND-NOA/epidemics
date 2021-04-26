@@ -1,5 +1,8 @@
 import ee
+import datetime
 import tabulate
+ee.Initialize()
+
 
 REDUCERS = {
     "firstNonNull": ee.Reducer.firstNonNull(),
@@ -51,9 +54,9 @@ def _temporal_collection_creator(collection, specifiedReducer, firstDatesList, s
         formattedAcquisitionDate = temporalCollection.first().date().format(timeFormat, timeZone)
 
         # Apply the specified reducer and remove the trailing _"reducer name" from each image's bands.
-        image = temporalCollection.reduce(reducers[specifiedReducer])
+        image = temporalCollection.reduce(REDUCERS[specifiedReducer])
         oldImageBands = image.bandNames()
-        newImageBands = oldImageBands.map(lambda bandName: ee.String(bandName).replace(reducerPatterns[specifiedReducer], ''))
+        newImageBands = oldImageBands.map(lambda bandName: ee.String(bandName).replace(REDUCERPATTERNS[specifiedReducer], ''))
         image = image.select(oldImageBands).rename(newImageBands)
 
         image = image.set("system:time_start", formattedAcquisitionDate)
